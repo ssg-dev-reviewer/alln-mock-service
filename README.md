@@ -273,7 +273,6 @@ Partner2 API 호출 시 10% 확률로 5-10초 사이의 랜덤한 시간만큼 �
     <status>500</status>
     <error>Internal Server Error</error>
     <message>제휴사 서버 일시적 오류가 발생했습니다.</message>
-    <path>/api/partner3/orders</path>
 </errorResponse>
 ```
 
