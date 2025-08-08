@@ -1,0 +1,28 @@
+server:
+  port: 9710
+
+spring:
+  application:
+    name: ssg-alln-mock
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  web:
+    cors:
+      allowed-origins: "*"
+      allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+      allowed-headers: "*"
+
+logging:
+  level:
+    com.ssg.api.ssgallnmock: DEBUG
+    org.springframework.web: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
